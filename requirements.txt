@@ -1,0 +1,31 @@
+ ---------------------------------------------------------------------------
+# Automated Kellgren–Lawrence Grading of Knee Osteoarthritis — dependencies
+# ---------------------------------------------------------------------------
+
+# Deep learning
+torch>=2.0
+torchvision>=0.15          # ResNet-50, DenseNet-201, ViT-B/16, transforms
+ 
+# Object detection (YOLO11n)
+ultralytics>=8.3.0         # YOLO11 support requires ultralytics >= 8.3
+ 
+
+# Metrics: accuracy, macro-F1, quadratic-weighted kappa
+scikit-learn>=1.3
+ 
+# Data / numerical
+numpy>=1.24
+pandas>=2.0
+ 
+# Image I/O and processing
+pillow>=10.0
+opencv-python>=4.8         # pulled in by ultralytics; listed for clarity
+ 
+# Configs
+pyyaml>=6.0
+ 
+# Plots (KL distribution, scaling curves, confusion matrices)
+matplotlib>=3.7
+ 
+# Utilities
+tqdm>=4.65
